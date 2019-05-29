@@ -11,13 +11,14 @@
 }
 
 body {
-	height: 100vh;
+	height: calc(100vh - 30px);
 	background-color: #141311;
 
 	display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+	overflow-y: hidden;
 }
 
 .light {
@@ -29,7 +30,11 @@ body {
 }
 
 .main-container {
+	margin-left: auto;
 	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 /********/
